@@ -27,6 +27,7 @@ ax.set_ylabel('Life Expectancy')
 #
 ax = fig.add_subplot(1,2,2)
 ax.hist(alg_dats['pop'])
+ax.hist(list(alg_dats['pop']))
 ax.set_xlabel('Population')
 ax.set_ylabel('Frequency')
 
@@ -35,7 +36,8 @@ fig.tight_layout()
 fig.text(0.01, 0.98, 'A', va='top', ha='left', fontsize=12)
 fig.text(0.49, 0.98, 'B', va='top', ha='left', fontsize=12)
 
-plt.show()
+fig.show()
+
 
 
 
